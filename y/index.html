@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo App By Ali</title>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+  https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBVE4v_A1f6U9YUakZMkPWCvGm3zSmrRe8",
+      authDomain: "todo-app-by-ali.firebaseapp.com",
+      databaseURL: "https://todo-app-by-ali-default-rtdb.firebaseio.com",
+      projectId: "todo-app-by-ali",
+      storageBucket: "todo-app-by-ali.appspot.com",
+      messagingSenderId: "318120408135",
+      appId: "1:318120408135:web:d8825f728ba6049e832d62",
+      measurementId: "G-HMBN3PGC5D"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="high">
+    <center>
+
+      <div>
+        <div class="stars-01"></div>
+        <div class="stars-02"></div>
+        <div class="stars-03"></div>
+        <div class="stars-04"></div>
+      </div>
+
+
+
+      <div class="text">
+        <span>TO</span>
+        <span>DOs</span>
+        <span>-</span>
+        <span>Ap</span>
+        <span>p!</span>
+      </div>
+
+
+
+      <!-- <section> -->
+
+
+      <div class="top">
+        <input type="text" id="item" value="" placeholder="Enter your todo here">
+        <button id="addButton" onclick="addItem()">Add Item</button>
+        <button id="deleteButton" onclick="deleteAll()">Delete All</button>
+      </div>
+
+
+
+      <div id="main">
+        <ol id="list">
+
+        </ol>
+
+      </div>
+
+
+    </center>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+
+
+
+
+
+
+
+</html>
